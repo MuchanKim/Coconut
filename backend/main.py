@@ -1,5 +1,6 @@
 from fastapi import FastAPI, File, UploadFile
 from fastapi.responses import JSONResponse
+import uvicorn
 import shutil
 
 app = FastAPI()
@@ -14,6 +15,4 @@ async def upload_image(image: UploadFile):
         return JSONResponse(content={"message": f"Failed to upload image: {str(e)}"})
 
 if __name__ == "__main__":
-    import uvicorn
-
     uvicorn.run(app, host="0.0.0.0", port=8000)
