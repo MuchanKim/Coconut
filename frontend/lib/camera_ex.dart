@@ -63,9 +63,9 @@ class _CameraExampleState extends State<CameraExample> {
           SizedBox(height: 100.0),  // Move the buttons a bit down
           Center(
             child: Image.asset(
-              'assets/logo.png',  // Replace with your logo asset path
-              width: 100.0,
-              height: 100.0,
+              'assets/images/logo.png',  // Replace with your logo asset path
+              width: 400.0,
+              height: 400.0,
             ),
           ),
           SizedBox(height: 50.0),  // Add some space between logo and buttons
